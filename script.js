@@ -1,6 +1,7 @@
 var block = "document.getElementbyId"("block");
 var hole = "document.getElementbyId"("hole");
 var character = "document.getElementbyId"("character")
+var jumping = 0;
 
 hole.addEvent('animationiteration', () => {
 var random = Math.random()*3;
@@ -13,5 +14,5 @@ var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue(
 },10);   
 
 function jump(){
-
+jumping = 1;
 }
