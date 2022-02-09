@@ -10,7 +10,9 @@ hole.style.top = -(top)+"px";
 });
 setInterval(function)){
 var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+  if(jumping==0){ 
   character.style.top = (charcterTop+3)+"px";
+  }
 },10);   
 
 function jump(){
